@@ -1,10 +1,10 @@
 import express from "express";
 import mongoose from "mongoose"
-import routerUser from "../src/routes/userRoute.js";
-import routerProduct from "../src/routes/productRoute.js"
-import checkToken from "../src/middleware/jwtCheckToken.js"
+import routerUser from "./routes/userRoute.js";
+import routerProduct from "./routes/productRoute.js"
+import checkToken from "./middleware/jwtCheckToken.js"
 import cors from "cors"
-import loginRouter from '../src/routes/userRoute.js'
+import loginRouter from './routes/userRoute.js'
 
 const port = process.env.PORT;
 const app = express();
