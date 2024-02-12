@@ -10,7 +10,7 @@ const port = process.env.PORT;
 const app = express();
 
 const corsOptions = {
-    origin: process.env.APPROVED || localhost/3000,
+    origin: process.env.APPROVED,
     optionsSuccessStatus: 200
 }
 
