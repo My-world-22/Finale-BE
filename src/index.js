@@ -1,16 +1,16 @@
 import express from "express";
 import mongoose from "mongoose"
-import routerUser from "./routes/userRoute.js";
-import routerProduct from "./routes/productRoute.js"
+import routerUser from "../src/routes/userRoute.js";
+import routerProduct from "../src/routes/productRoute.js"
 import checkToken from "../src/middleware/jwtCheckToken.js"
 import cors from "cors"
-import loginRouter from './routes/userRoute.js'
+import loginRouter from '../src/routes/userRoute.js'
 
 const port = process.env.PORT;
 const app = express();
 
 const corsOptions = {
-    origin: process.env.APPROVED,
+    origin: process.env.APPROVED || localhost/3000,
     optionsSuccessStatus: 200
 }
 

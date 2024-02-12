@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken"
 // import { User } from "../model/userSchemaRegister.js"
-import { login } from "../model/UserSchemaLogin"
+import { login } from "../model/userSchemaLogin.js"
 const checkToken = async (req, res, next) => {
 try {
     const token = req.headers.authorization.split(" ")[1] 
